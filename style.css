@@ -3,16 +3,30 @@
     margin: 0;
     padding: 0;
 }
+button{
+    background: #FF900E;
+    padding: 20px 25px;
+    font-family: 'Work Sans';
+     font-weight: 600;
+     font-size: 20px;
+     border: 0;
+     border-radius: 10px;
+     color: white;
+     margin-top: 32px;
+     margin-bottom: 40px;
+   }
 
 header {
     background: rgba(255, 144, 14, 0.1);
     color: #000;
-    padding: 10px;
+    padding: 20px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
+ .logo h1{
+    font-size: 45px;
+ }
   
   header nav ul {
     list-style-type: none;
@@ -28,6 +42,8 @@ header {
     color: #000;
     text-decoration: none;
     padding: 10px;
+    font-size: 22px;
+
   }
 
   .banner-section{
@@ -36,25 +52,28 @@ header {
   .banner-info{
     text-align: center;
   }
-   button{
-   background: #FF900E;
-   padding: 20px 25px;
-   font-family: 'Work Sans';
-    font-weight: 600;
-    font-size: 20px;
-    border: 0;
-    border-radius: 10px;
-    color: white;
-    margin-top: 32px;
-    margin-bottom: 40px;
+  .banner-section .banner-info .banner-title h1{
+    font-size: 64px;
+    font-weight: 700;
+    padding-top: 100px;
   }
+  .banner-section .banner-info .banner-title p{
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  
   .banner-section .banner-image img{
     width: 1100px;
     height: 600px;
-  padding: 30px 200px;
+   padding: 30px 200px;
+   margin-bottom: 30px;
   }
 
-
+.feature-section{
+    margin-top: 80px;
+    padding: 20px 70px;
+}
   .feature-section .feature-info{
     display: flex;
     justify-content: space-between;
@@ -70,6 +89,23 @@ header {
     padding-right: 300px;
     padding-top: 300px;
     padding-bottom: 300px;
+  }
+  .feature-title h2{
+    font-size: 40px;
+
+  }
+  .feature-title .gray{
+    color: gray;
+
+  }
+  .feature-title .orange{
+    color: orange;
+
+  }
+  .feature-title p{
+    color: gray;
+    font-size: 22px;
+
   }
 
   .architect-section{
@@ -95,7 +131,7 @@ padding-left: 8px;
   }
   .architect-section .architect-info .architect-title p{
     font-family: Work Sans;
-font-size: 16px;
+font-size: 20px;
 font-weight: 400;
 line-height: 26px;
 letter-spacing: 0em;
@@ -107,11 +143,13 @@ color: #727272;
   .architect-info .architect-details .architect{
     width: 586px;
 height: 100px;
+font-size: 20px;
 padding: 30px;
 background: #FFFFFF;
 box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
 border-radius: 8px;
 margin-top: 20px;
+font: Work Sans;
   }
   .architect-image img{
    height: 850px;
@@ -121,7 +159,108 @@ margin-top: 20px;
 width: 342px;
 height: 200px;
 left: 770px;
-top: 2484px;
+top: 3104px;
+  }
+  .architect-image button h6{
+    font-size: 26px;
+  }
+
+/* summary style section */
+
+  .summary-section .summary-title h1{
+    font-size: 45px;
+    margin-left: 35px;
+    font-weight: 400;
+    margin-top: 45px;
+    padding-top: 20px;
+  }
+  .summary-section .summary-title p{
+    font-size: 25px;
+    margin-left: 35px;
+    font-weight: 700;
+    color: gray;
+    margin-top: 18px;
+  }
+  .summary-section .summary-details{
+    display: flex;
+   justify-content: space-evenly;
+
+
+   
+  }
+  .summary-section .summary-details .card{
+    width: 220px;
+    height: 220px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+  }
+  .summary-section .summary-details .card .icon-info .icon img{
+ width: 45px;
+ height: 45px;
+  }
+  .summary-section .summary-details .card .card-info{
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .summary-section .summary-details .card .card-info .card-details h1 {
+    font-weight: 600;
+   font-size: 45px;
+  }
+  .summary-section .summary-details .card .card-info .card-details p {
+    font-size: 22px;
+  }
+
+
+
+  /* sponsor section style */
+  .sponsor-section .sponsor-title{
+    text-align: center;
+    font-size: 35px;
+  }
+  .sponsor-section .sponsor-title p{
+    text-align: center;
+    font-size: 25px;
+  }
+  .sponsor-section .sponsor-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 45px 130px;
+  }
+  
+  .subscript-section{
+    background: #000;
+    margin: 30px 45px;
+    border-radius: 10px;
+  }
+  .subscript-section .subscript h1{
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .subscript-section .subscript{
+    text-align: center;
+    color: white;
+    padding: 50px;
+  }
+  .subscript-section .subscript input{
+    padding: 23px 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+    
+  }
+  .footer{
+    background-color: #FFF4E7;
+    text-align: center;
+    color: gray;
+    padding: 40px;
+    
   }
 
   
