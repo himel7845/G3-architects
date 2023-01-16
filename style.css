@@ -196,6 +196,14 @@ font: Work Sans;
     margin-bottom: 60px;
 
   }
+  .summary-section .summary-details .card:hover{
+  
+    background: rgba(255, 144, 14, 0.1);
+    color: rgb(97, 65, 65);
+    border: 1px solid gray;
+   cursor: pointer;
+
+  }
   .summary-section .summary-details .card .icon-info .icon img{
  width: 45px;
  height: 45px;
@@ -297,7 +305,7 @@ header {
     color: #000;
     text-decoration: none;
     padding: 10px;
-    font-size: 22px;
+    font-size: 32px;
 
   }
 
@@ -420,7 +428,7 @@ color: #727272;
     width: 342px;
     height: 200px;
     left: 20px;
-    top: 5484px;
+    top: 5584px;
   }
   .architect-image button h6{
     font-size: 26px;
