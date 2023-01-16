@@ -66,8 +66,8 @@ header {
   .banner-section .banner-image img{
     width: 1100px;
     height: 600px;
-   padding: 30px 200px;
-   margin-bottom: 30px;
+     padding: 30px 200px;
+     margin-bottom: 30px;
   }
 
 .feature-section{
@@ -75,20 +75,23 @@ header {
     padding: 20px 70px;
 }
   .feature-section .feature-info{
-    display: flex;
-    justify-content: space-between;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
   }
-  .feature-section .feature-image{
+  .feature-section .feature-info .feature-image{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 24px;
-
+    grid-gap: 30px;
+     width: 342px;
+    height: 342px;
+ 
   }
+  
   .feature-title{
     padding-left: 70px;
-    padding-right: 300px;
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-right: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
   .feature-title h2{
     font-size: 40px;
@@ -113,10 +116,7 @@ header {
     justify-content: space-around;
    
   }
-.architect-section {
-
-
-}
+/* architect section style */
   .architect-section .architect-info .architect-title .title{
    height: 100px;
    border-left: 5px solid #FF900E;
@@ -156,10 +156,10 @@ font: Work Sans;
   }
   .architect-image button{
     position: absolute;
-width: 342px;
-height: 200px;
-left: 770px;
-top: 3104px;
+    width: 342px;
+    height: 200px;
+    left: 770px;
+    top: 2804px;
   }
   .architect-image button h6{
     font-size: 26px;
@@ -184,8 +184,6 @@ top: 3104px;
   .summary-section .summary-details{
     display: flex;
    justify-content: space-evenly;
-
-
    
   }
   .summary-section .summary-details .card{
@@ -222,6 +220,9 @@ top: 3104px;
     text-align: center;
     font-size: 35px;
   }
+  .sponsor-section{
+    padding: 50px 20px;
+  }
   .sponsor-section .sponsor-title p{
     text-align: center;
     font-size: 25px;
@@ -232,7 +233,8 @@ top: 3104px;
     align-items: center;
     margin: 45px 130px;
   }
-  
+
+  /* subscription section style */
   .subscript-section{
     background: #000;
     margin: 30px 45px;
@@ -253,7 +255,6 @@ top: 3104px;
     padding: 23px 5px;
     border-radius: 10px;
     margin-left: 10px;
-    
   }
   .footer{
     background-color: #FFF4E7;
@@ -264,4 +265,257 @@ top: 3104px;
   }
 
   
+
+
+  /* responsive for mobile device */
+  @media only screen and (max-width: 768px) {
+   
+header {
+    background: rgba(255, 144, 14, 0.1);
+    color: #000;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ .logo h1{
+    font-size: 45px;
+ }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: block;
+  }
+  
+  header nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 22px;
+
+  }
+
+     .banner-section .banner-info .banner-title h1{
+    font-size: 35px;
+    font-weight: 700;
+    padding-top: 70px;
+  }
+  .banner-section .banner-info .banner-title p{
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .banner-section .banner-image img{
+    width: 550px;
+    height: 400px;
+   padding: 30px 30px;
+   margin-bottom: 30px;
+  }
+
+  /* feature section style for media query */
+  .feature-section{
+    margin-top: 80px;
+    padding: 20px 20px;
+}
+  .feature-section .feature-info{
+   display: flex;
+   flex-direction: column;
+   
+  }
+  .feature-section .feature-info .feature-image{
+    display: flex;
+    flex-direction: column;
+    width: 542px;
+    height: 400px;
+ 
+  }
+  
+  .feature-title{
+    padding-left: 70px;
+    padding-right: 200px; 
+     padding-top: 300px;
+    padding-bottom: 20px; 
+    margin-top: 1580px;
+  }
+  .feature-title h2{
+    font-size: 40px;
+
+  }
+  .feature-title .gray{
+    color: gray;
+
+  }
+  .feature-title .orange{
+    color: orange;
+
+  }
+  .feature-title p{
+    color: gray;
+    font-size: 22px;
+
+  }
+
+  .architect-section{
+    display: flex;
+    justify-content: space-around;
+   
+  }
+  
+  .architect-section{
+    display: flex;
+    flex-direction: column;
+   padding: 15px 20px;
+  
+  }
+
+  .architect-section .architect-info .architect-title .title{
+   height: 100px;
+   border-left: 5px solid #FF900E;
+  }
+  .architect-section .architect-info .architect-title .title h1{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    padding-left: 8px;
+
+  }
+  .architect-section .architect-info .architect-title p{
+    font-family: Work Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+color: #727272;
+
+
+  }
+  .architect-info .architect-details .architect{
+    width: 486px;
+    height: 100px;
+    font-size: 20px;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-top: 20px;
+    font: Work Sans;
+  }
+  .architect-image img{
+    width: 550px;
+   height: 880px;
+    position: relative;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  .architect-image button{
+    position: absolute;
+    width: 342px;
+    height: 200px;
+    left: 20px;
+    top: 5484px;
+  }
+  .architect-image button h6{
+    font-size: 26px;
+  }
+ .summary-section .summary-title h1{
+  padding-top: 50px;
+  font-weight: 900;
+  text-align: center;
+ }
+ .summary-section .summary-title p{
+  padding-top: 15px;
+  font-weight: 400;
+  text-align: center;
+ }
+  .summary-section .summary-details{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+  }
+
+  .summary-section .summary-details .card{
+    width: 420px;
+    height: 320px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+  }
+  
+  .summary-section .summary-details .card .icon-info .icon img{
+ width: 150px;
+ height: 150px;
+  }
+  .summary-section .summary-details .card .card-info{
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .summary-section .summary-details .card .card-info .card-details h1 {
+    font-weight: 900;
+   font-size: 60px;
+  }
+  .summary-section .summary-details .card .card-info .card-details p {
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  /* sponsor section style */
+  .sponsor-section .sponsor-title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .sponsor-section{
+    padding: 50px 20px;
+  }
+  .sponsor-section .sponsor-title p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .sponsor-section .sponsor-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .sponsor-section .sponsor-info img{
+    margin-top: 35px;
+    padding-top: 20px;
+    
+  }
+  
+
+  /* subscription section style */
+  .subscript-section .subscript h1{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+ 
+  /* footer style */
+  .footer h1{
+    background-color: #FFF4E7;
+    color: gray;
+    padding: 16px;
+    font-size: 17px;
+    
+  }
+
+  }
   
